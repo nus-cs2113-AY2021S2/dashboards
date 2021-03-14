@@ -54,7 +54,7 @@
         <h1 class="display-4" id="forum-activities-dashboard"><span id="forum-activities-dashboard" class="anchor"></span>Forum activities dashboard<a class="fa fa-anchor" href="#forum-activities-dashboard" onclick="event.stopPropagation()"></a></h1>
         <p>This dashboard is <strong>updated weekly</strong>.</p>
         <div>
-          <p><span class="dimmed">[This page was last updated on Mar 05 2021]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <p><span class="dimmed">[This page was last updated on Mar 14 2021]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                   <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
                 </svg></span> indicates those <em>watching</em> the forum</strong> (kudos 👍)]</p>
           <panel type="info" collapsed id="1-lee-peng-leeyp-21-posts"><template slot="header">
@@ -545,10 +545,98 @@ while (!isExit) {
               <p><a href="https://user-images.githubusercontent.com/74185161/108086781-ba2d8600-70b1-11eb-86d5-53815d8a322d.png" target="_self"><img src="https://user-images.githubusercontent.com/74185161/108086781-ba2d8600-70b1-11eb-86d5-53815d8a322d.png" alt class="img-fluid"></a></p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="4-jova-chun-jovanhuang-10-posts"><template slot="header">
-              <h3 id="4-jova-chun-jovanhuang-10-posts"><span id="4-jova-chun-jovanhuang-10-posts" class="anchor"></span>4. JOVA..CHUN <code class="hljs inline no-lang" v-pre>@jovanhuang</code> (10 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="4-ryan-kwok-kwokyto-10-posts"><template slot="header">
+              <h3 id="4-ryan-kwok-kwokyto-10-posts"><span id="4-ryan-kwok-kwokyto-10-posts" class="anchor"></span>4. RYAN..KWOK <code class="hljs inline no-lang" v-pre>@kwokyto</code> (10 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#4-jova-chun-jovanhuang-10-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#4-ryan-kwok-kwokyto-10-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/45" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡 Fixing permissions for TP</strong></p>
+              </template>
+              <p>The original commands from prof didnt work for me. I did this instead and it works:</p>
+              <p>git update-index --chmod=+x <a href="http://runtest.sh">runtest.sh</a></p>
+              <p>git commit -m &quot;Update <a href="http://runtest.sh">runtest.sh</a>&quot;
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/30" expanded><template slot="header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Formatting of exceptions without exceeding line limit</strong></p>
+              </template>
+              <p>I have to define a function that may throw several exceptions, but that makes the function definition line very long. I remember that there is a &quot;hard limit&quot; on how long a line can be. If this function definition line exceeds this limit, how do I format the layout? Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/23" expanded><template slot="header">
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> Pushing and deleting tags</strong></p>
+              </template>
+              <p>I have pushed a &quot;Level-1&quot; tag on a commit for my ip, but i found some bugs, fixed them, committed and push again. From what i understand, i cannot assign 2 commits with the same tag. How do i delete tags and re-tag the correct commit? will the tags be used to trace which commit will be graded? thanks!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3" expanded><template slot="header">
+                <p><strong>4. <span aria-hidden="true" class="fas fa-info-circle"></span> week 2 ex 2</strong></p>
+              </template>
+              <p>i dont quite understand what we are supposed to do with this. i understand that we are required to take in 2 values and compare them, but in the test file, null is passed into main, are we also expected to be managing the error handling for &quot;wrong&quot; arguments passed into the function? thanks
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-761576274" expanded><template slot="header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>i see, so on github it will be alright for it to be left as failed?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/4#issuecomment-761593422" expanded><template slot="header">
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>as prof said in the other thread, try checking for null and return nothing
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-764428681" expanded><template slot="header">
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>Adding this if statement to check for null works for me.</p>
+              </blockquote>
+              <blockquote>
+                <p>Also, would like to know if <code class="hljs inline no-lang" v-pre>|| args.length &amp;gt; 1</code> is redundant in this case? Thank anyone in advance.</p>
+              </blockquote>
+              <blockquote>
+                <p><code class="hljs inline no-lang" v-pre>if (args == null || args.length &amp;gt; 1) { return; }</code></p>
+              </blockquote>
+              <p>its the length that is redundant, you cannot check length of null
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-764430005" expanded><template slot="header">
+                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>no problem, actually you can check it out by running each condition individually, i believe only args==null will work
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/23#issuecomment-767276595" expanded><template slot="header">
+                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>edit: i realised there are differences between local and remote tags, i have deleted remote tags via github browser, but local tags tripped me a bit. using this command in cmd in your repo folder works</p>
+              <p>git tag -d tagname
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/49#issuecomment-797613142" expanded><template slot="header">
+                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>you can try if this works for you</p>
+              <p><a href="https://github.com/nus-cs2113-AY2021S2/forum/issues/47">https://github.com/nus-cs2113-AY2021S2/forum/issues/47</a></p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="5-jova-chun-jovanhuang-10-posts"><template slot="header">
+              <h3 id="5-jova-chun-jovanhuang-10-posts"><span id="5-jova-chun-jovanhuang-10-posts" class="anchor"></span>5. JOVA..CHUN <code class="hljs inline no-lang" v-pre>@jovanhuang</code> (10 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#5-jova-chun-jovanhuang-10-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/9" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Difficulty cloning from Github Classroom</strong></p>
@@ -638,8 +726,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="5-cao-uwen-cswbibibi-9-posts"><template slot="header">
-              <h3 id="5-cao-uwen-cswbibibi-9-posts"><span id="5-cao-uwen-cswbibibi-9-posts" class="anchor"></span>5. CAO ..UWEN <code class="hljs inline no-lang" v-pre>@cswbibibi</code> (9 posts)<a class="fa fa-anchor" href="#5-cao-uwen-cswbibibi-9-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="6-cao-uwen-cswbibibi-9-posts"><template slot="header">
+              <h3 id="6-cao-uwen-cswbibibi-9-posts"><span id="6-cao-uwen-cswbibibi-9-posts" class="anchor"></span>6. CAO ..UWEN <code class="hljs inline no-lang" v-pre>@cswbibibi</code> (9 posts)<a class="fa fa-anchor" href="#6-cao-uwen-cswbibibi-9-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/35" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> IP-Tracker</strong></p>
@@ -706,78 +794,6 @@ while (!isExit) {
                 <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>@okkhoy hi prof can you help to take a look at this? Thank you!
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="6-ryan-kwok-kwokyto-8-posts"><template slot="header">
-              <h3 id="6-ryan-kwok-kwokyto-8-posts"><span id="6-ryan-kwok-kwokyto-8-posts" class="anchor"></span>6. RYAN..KWOK <code class="hljs inline no-lang" v-pre>@kwokyto</code> (8 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#6-ryan-kwok-kwokyto-8-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/30" expanded><template slot="header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Formatting of exceptions without exceeding line limit</strong></p>
-              </template>
-              <p>I have to define a function that may throw several exceptions, but that makes the function definition line very long. I remember that there is a &quot;hard limit&quot; on how long a line can be. If this function definition line exceeds this limit, how do I format the layout? Thank you!
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/23" expanded><template slot="header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Pushing and deleting tags</strong></p>
-              </template>
-              <p>I have pushed a &quot;Level-1&quot; tag on a commit for my ip, but i found some bugs, fixed them, committed and push again. From what i understand, i cannot assign 2 commits with the same tag. How do i delete tags and re-tag the correct commit? will the tags be used to trace which commit will be graded? thanks!
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3" expanded><template slot="header">
-                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> week 2 ex 2</strong></p>
-              </template>
-              <p>i dont quite understand what we are supposed to do with this. i understand that we are required to take in 2 values and compare them, but in the test file, null is passed into main, are we also expected to be managing the error handling for &quot;wrong&quot; arguments passed into the function? thanks
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-761576274" expanded><template slot="header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>i see, so on github it will be alright for it to be left as failed?
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/4#issuecomment-761593422" expanded><template slot="header">
-                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>as prof said in the other thread, try checking for null and return nothing
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-764428681" expanded><template slot="header">
-                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <blockquote>
-                <p>Adding this if statement to check for null works for me.</p>
-              </blockquote>
-              <blockquote>
-                <p>Also, would like to know if <code class="hljs inline no-lang" v-pre>|| args.length &amp;gt; 1</code> is redundant in this case? Thank anyone in advance.</p>
-              </blockquote>
-              <blockquote>
-                <p><code class="hljs inline no-lang" v-pre>if (args == null || args.length &amp;gt; 1) { return; }</code></p>
-              </blockquote>
-              <p>its the length that is redundant, you cannot check length of null
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-764430005" expanded><template slot="header">
-                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>no problem, actually you can check it out by running each condition individually, i believe only args==null will work
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/23#issuecomment-767276595" expanded><template slot="header">
-                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>edit: i realised there are differences between local and remote tags, i have deleted remote tags via github browser, but local tags tripped me a bit. using this command in cmd in your repo folder works</p>
-              <p>git tag -d tagname
               </p>
             </panel>
             <p></p>
@@ -1099,106 +1115,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="12-yeun-seng-joviyeung92-4-posts"><template slot="header">
-              <h3 id="12-yeun-seng-joviyeung92-4-posts"><span id="12-yeun-seng-joviyeung92-4-posts" class="anchor"></span>12. YEUN..SENG <code class="hljs inline no-lang" v-pre>@JoviYeung92</code> (4 posts)<a class="fa fa-anchor" href="#12-yeun-seng-joviyeung92-4-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/39" expanded><template slot="header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> PR merge</strong></p>
-              </template>
-              <p>Hi, when we do a PR merge on GITHUB they will prompt to delete away the old branch . Is it okay if we delete that old branch ?
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/28" expanded><template slot="header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Teamwork submission link for TP this week</strong></p>
-              </template>
-              <p>Submission: Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. Only one member needs to submit on behalf of the team. All members can view/update the submission.</p>
-              <p>Hi prof,</p>
-              <p>When will the submission link be avail? Thank You
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761759859" expanded><template slot="header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>If i don't push my file from source tree i can also edit it directly from the main file inside github right?</p>
-              <p>How can we know our codes are 100% correct? Are there any checkers?
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761824863" expanded><template slot="header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <blockquote>
-                <p>@JoviYeung92 just to be sure I answer correctly, are you talking about the individual project (iP) or the exercises on GitHub classroom?</p>
-              </blockquote>
-              <blockquote></blockquote>
-              <blockquote>
-                <p>For iP, each increment would add something new to the codebase you have developed so far. You need to test it on your machine to see if things are working. During the tutorials, you are required to show a quick demo to your tutors. So things get validated there.</p>
-              </blockquote>
-              <blockquote></blockquote>
-              <blockquote>
-                <p>If you are talking about the exercises on GitHub classrooms, there are tests that run via GitHub actions (as mentioned by @8kdesign ) if the test passes, you are doing the right thing.</p>
-              </blockquote>
-              <blockquote>
-                <p>I am preparing a video to demonstrate how to import the exercise to the IDE, do your development and testing; once your tests pass locally, you can push your code, which forms the submissions.</p>
-              </blockquote>
-              <p>okay prof, thanks for the information.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="13-jona-yang-jonathankhooty-4-posts"><template slot="header">
-              <h3 id="13-jona-yang-jonathankhooty-4-posts"><span id="13-jona-yang-jonathankhooty-4-posts" class="anchor"></span>13. JONA..YANG <code class="hljs inline no-lang" v-pre>@JonathanKhooTY</code> (4 posts)<a class="fa fa-anchor" href="#13-jona-yang-jonathankhooty-4-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/7" expanded><template slot="header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Invitation for Week 2 Assignment 4 disabled</strong></p>
-              </template>
-              <p>The link for Week 2 Ex 4 states that &quot;Invitations for this assignment have been disabled&quot;, upon clicking &quot;Accept this assignment&quot;.</p>
-              <p>Would like to check if there's an &quot;Ex 4&quot; task to be completed for Week 2?</p>
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/7#issuecomment-761965259" expanded><template slot="header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>It now works, thanks.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-762065576" expanded><template slot="header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <blockquote></blockquote>
-              <blockquote></blockquote>
-              <blockquote>
-                <p>@Leeyp it was not done intentionally.</p>
-              </blockquote>
-              <blockquote>
-                <p>Hopefully, no such encounters in the future 🤞</p>
-              </blockquote>
-              <blockquote>
-                <p>PE is a different matter entirely. We will talk about it when it is the right time!</p>
-              </blockquote>
-              <p>Hi, would like to clarify on this task too. Is it expected to observe a &quot;Autograding fail&quot; result (Points 0/1) in the Git autograding status upon pushing?</p>
-              <p>Expansion of the error message states testMain failed.</p>
-              <p>But the code runs fine on local terminal upon manual insertion of the names.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-762233391" expanded><template slot="header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <blockquote></blockquote>
-              <blockquote></blockquote>
-              <blockquote>
-                <p>The test case is when null is given instead of the 2 names. You have to check for null. (And do nothing if null)</p>
-              </blockquote>
-              <p>I did some googling, and apparently passing a &quot;null&quot; string into main is highly unusual. However, I still attempted to insert a checker for null by checking for the length of the string input, and exiting Main in the event of a null input, but still failing testMain. Any ideas where I'm going wrong?
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="14-jona-long-jonahtwl-4-posts"><template slot="header">
-              <h3 id="14-jona-long-jonahtwl-4-posts"><span id="14-jona-long-jonahtwl-4-posts" class="anchor"></span>14. JONA..LONG <code class="hljs inline no-lang" v-pre>@jonahtwl</code> (4 posts)<a class="fa fa-anchor" href="#14-jona-long-jonahtwl-4-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="12-jona-long-jonahtwl-5-posts"><template slot="header">
+              <h3 id="12-jona-long-jonahtwl-5-posts"><span id="12-jona-long-jonahtwl-5-posts" class="anchor"></span>12. JONA..LONG <code class="hljs inline no-lang" v-pre>@jonahtwl</code> (5 posts)<a class="fa fa-anchor" href="#12-jona-long-jonahtwl-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/32" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Issues with text-ui-tests</strong></p>
@@ -1251,11 +1169,161 @@ while (!isExit) {
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/45#issuecomment-792418661" expanded><template slot="header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Did the same as above and it worked. Thanks!
+              </p>
+            </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="15-osca-lai-oscarlai1998-4-posts"><template slot="header">
-              <h3 id="15-osca-lai-oscarlai1998-4-posts"><span id="15-osca-lai-oscarlai1998-4-posts" class="anchor"></span>15. OSCA.. LAI <code class="hljs inline no-lang" v-pre>@oscarlai1998</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="13-farm-hao-farmzh98-4-posts"><template slot="header">
+              <h3 id="13-farm-hao-farmzh98-4-posts"><span id="13-farm-hao-farmzh98-4-posts" class="anchor"></span>13. FARM.. HAO <code class="hljs inline no-lang" v-pre>@FarmZH98</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#15-osca-lai-oscarlai1998-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#13-farm-hao-farmzh98-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/47" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> tP implementation</strong></p>
+              </template>
+              <p>To roughly put, our team is thinking of implementing a program to allow the user to clear emails more efficiently by streamlining the process. However, we thought of some questions on our implementation and would love to have some clarifications. The questions are listed below:</p>
+              <ol>
+                <li>
+                  <p>Can we implement a fake email inbox, sent mailbox etc? So all the data will be pre-loaded to simulate a real email account. This is due to a concern of Internet issue. Otherwise,</p>
+                </li>
+                <li>
+                  <p>Can we send emails to actual email accounts? (Requires the use to internet, to check that emails are received, and using external packages)</p>
+                </li>
+                <li>
+                  <p>If checking of gmail online is not allowed, what is the suggested method we can implement the send email function</p>
+                </li>
+              </ol>
+              <p>Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/43" expanded><template slot="header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> tick icon when running in IntelliJ becomes ? when running in jar file</strong></p>
+              </template>
+              <p>I think the title is self explanatory. Does anyone know what am I doing wrong and if there is a way to solve this issue?</p>
+              <p>Thank you in advanced!</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/8" expanded><template slot="header">
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> Linking SourceTree to Github</strong></p>
+              </template>
+              <p>I am having trouble linking sourcetree to Github. The details of error I am facing is exactly like what was described in the link below:</p>
+              <p><a href="https://community.atlassian.com/t5/Sourcetree-questions/Can-t-link-SourceTree-to-GitHub-account/qaq-p/1570763">https://community.atlassian.com/t5/Sourcetree-questions/Can-t-link-SourceTree-to-GitHub-account/qaq-p/1570763</a></p>
+              <p>Any help is deeply appreciated, thank you so much!</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/8#issuecomment-762118977" expanded><template slot="header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thanks all for the help. In the end, I think i managed to login by setting the following:</p>
+              <p><a href="https://user-images.githubusercontent.com/77458324/104897509-6b59d700-59b3-11eb-9b6b-aed773536fce.png" target="_self"><img src="https://user-images.githubusercontent.com/77458324/104897509-6b59d700-59b3-11eb-9b6b-aed773536fce.png" alt class="img-fluid"></a></p>
+              <p>Once i type in my username and click on &quot;Refresh OAuth Token&quot;, it will lead me to a webpage and i just have to allow access.</p>
+            </panel>
+          </panel>
+          <panel type="info" collapsed id="14-yeun-seng-joviyeung92-4-posts"><template slot="header">
+              <h3 id="14-yeun-seng-joviyeung92-4-posts"><span id="14-yeun-seng-joviyeung92-4-posts" class="anchor"></span>14. YEUN..SENG <code class="hljs inline no-lang" v-pre>@JoviYeung92</code> (4 posts)<a class="fa fa-anchor" href="#14-yeun-seng-joviyeung92-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/39" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> PR merge</strong></p>
+              </template>
+              <p>Hi, when we do a PR merge on GITHUB they will prompt to delete away the old branch . Is it okay if we delete that old branch ?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/28" expanded><template slot="header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Teamwork submission link for TP this week</strong></p>
+              </template>
+              <p>Submission: Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. Only one member needs to submit on behalf of the team. All members can view/update the submission.</p>
+              <p>Hi prof,</p>
+              <p>When will the submission link be avail? Thank You
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761759859" expanded><template slot="header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>If i don't push my file from source tree i can also edit it directly from the main file inside github right?</p>
+              <p>How can we know our codes are 100% correct? Are there any checkers?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761824863" expanded><template slot="header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>@JoviYeung92 just to be sure I answer correctly, are you talking about the individual project (iP) or the exercises on GitHub classroom?</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>For iP, each increment would add something new to the codebase you have developed so far. You need to test it on your machine to see if things are working. During the tutorials, you are required to show a quick demo to your tutors. So things get validated there.</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>If you are talking about the exercises on GitHub classrooms, there are tests that run via GitHub actions (as mentioned by @8kdesign ) if the test passes, you are doing the right thing.</p>
+              </blockquote>
+              <blockquote>
+                <p>I am preparing a video to demonstrate how to import the exercise to the IDE, do your development and testing; once your tests pass locally, you can push your code, which forms the submissions.</p>
+              </blockquote>
+              <p>okay prof, thanks for the information.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="15-jona-yang-jonathankhooty-4-posts"><template slot="header">
+              <h3 id="15-jona-yang-jonathankhooty-4-posts"><span id="15-jona-yang-jonathankhooty-4-posts" class="anchor"></span>15. JONA..YANG <code class="hljs inline no-lang" v-pre>@JonathanKhooTY</code> (4 posts)<a class="fa fa-anchor" href="#15-jona-yang-jonathankhooty-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/7" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Invitation for Week 2 Assignment 4 disabled</strong></p>
+              </template>
+              <p>The link for Week 2 Ex 4 states that &quot;Invitations for this assignment have been disabled&quot;, upon clicking &quot;Accept this assignment&quot;.</p>
+              <p>Would like to check if there's an &quot;Ex 4&quot; task to be completed for Week 2?</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/7#issuecomment-761965259" expanded><template slot="header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>It now works, thanks.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-762065576" expanded><template slot="header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote></blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>@Leeyp it was not done intentionally.</p>
+              </blockquote>
+              <blockquote>
+                <p>Hopefully, no such encounters in the future 🤞</p>
+              </blockquote>
+              <blockquote>
+                <p>PE is a different matter entirely. We will talk about it when it is the right time!</p>
+              </blockquote>
+              <p>Hi, would like to clarify on this task too. Is it expected to observe a &quot;Autograding fail&quot; result (Points 0/1) in the Git autograding status upon pushing?</p>
+              <p>Expansion of the error message states testMain failed.</p>
+              <p>But the code runs fine on local terminal upon manual insertion of the names.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/3#issuecomment-762233391" expanded><template slot="header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote></blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>The test case is when null is given instead of the 2 names. You have to check for null. (And do nothing if null)</p>
+              </blockquote>
+              <p>I did some googling, and apparently passing a &quot;null&quot; string into main is highly unusual. However, I still attempted to insert a checker for null by checking for the length of the string input, and exiting Main in the event of a null input, but still failing testMain. Any ideas where I'm going wrong?
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="16-osca-lai-oscarlai1998-4-posts"><template slot="header">
+              <h3 id="16-osca-lai-oscarlai1998-4-posts"><span id="16-osca-lai-oscarlai1998-4-posts" class="anchor"></span>16. OSCA.. LAI <code class="hljs inline no-lang" v-pre>@oscarlai1998</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#16-osca-lai-oscarlai1998-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/24" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> When I push my code from IntelliJ to Github, tabsize is automatically size 8</strong></p>
@@ -1286,36 +1354,87 @@ while (!isExit) {
               <p>Hello Prof, I have fixed it by just reformatting the entire code again.</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="16-farm-hao-farmzh98-3-posts"><template slot="header">
-              <h3 id="16-farm-hao-farmzh98-3-posts"><span id="16-farm-hao-farmzh98-3-posts" class="anchor"></span>16. FARM.. HAO <code class="hljs inline no-lang" v-pre>@FarmZH98</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="17-haze-tan-hazelhedmine-4-posts"><template slot="header">
+              <h3 id="17-haze-tan-hazelhedmine-4-posts"><span id="17-haze-tan-hazelhedmine-4-posts" class="anchor"></span>17. HAZE.. TAN <code class="hljs inline no-lang" v-pre>@hazelhedmine</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#16-farm-hao-farmzh98-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#17-haze-tan-hazelhedmine-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/43" expanded><template slot="header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> tick icon when running in IntelliJ becomes ? when running in jar file</strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/50" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Are we supposed to update text-ui-test and AboutMe page?</strong></p>
               </template>
-              <p>I think the title is self explanatory. Does anyone know what am I doing wrong and if there is a way to solve this issue?</p>
-              <p>Thank you in advanced!</p>
+              <p>Must we include photos for AboutMe page or is it optional?</p>
+              <p>Are we graded on what we include in our text-ui-test component (such as our new features) or is it just for our own testing?</p>
+              <p>Thank you!
+              </p>
             </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/8" expanded><template slot="header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Linking SourceTree to Github</strong></p>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/48" expanded><template slot="header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> tP JUnit test not being detected in dashboard</strong></p>
               </template>
-              <p>I am having trouble linking sourcetree to Github. The details of error I am facing is exactly like what was described in the link below:</p>
-              <p><a href="https://community.atlassian.com/t5/Sourcetree-questions/Can-t-link-SourceTree-to-GitHub-account/qaq-p/1570763">https://community.atlassian.com/t5/Sourcetree-questions/Can-t-link-SourceTree-to-GitHub-account/qaq-p/1570763</a></p>
-              <p>Any help is deeply appreciated, thank you so much!</p>
+              <p><a href="https://user-images.githubusercontent.com/66232361/110746258-804a3c80-8277-11eb-9162-5387d73ee89a.png" target="_self"><img src="https://user-images.githubusercontent.com/66232361/110746258-804a3c80-8277-11eb-9162-5387d73ee89a.png" alt class="img-fluid"></a></p>
+              <p>I've implemented TaskListTest using JUnit but it was not reflected as done on the tP individual dashboard. The commit was counted in hence I believe that the dashboard was updated.</p>
+              <p>What should I do so that it will be updated as done?
+              </p>
             </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/8#issuecomment-762118977" expanded><template slot="header">
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/6" expanded><template slot="header">
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> sourcetree credential helper selector</strong></p>
+              </template>
+              <p>Hi, whenever I use source tree to clone/push anything the credential helper selector keep popping up and I'm not sure what to select. Just clicking cancel works but it will still pop up the next time I use source tree. Does anyone know which option I should select or is there a way to get rid of it? Thank you!</p>
+              <p><a href="https://user-images.githubusercontent.com/66232361/104836399-bf4bb980-58e8-11eb-84e8-0a71f2bd19b6.png" target="_self"><img src="https://user-images.githubusercontent.com/66232361/104836399-bf4bb980-58e8-11eb-84e8-0a71f2bd19b6.png" alt class="img-fluid"></a></p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/48#issuecomment-796885343" expanded><template slot="header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>It seems like that was the issue, thank you!
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="18-chew-wei-tehtea-3-posts"><template slot="header">
+              <h3 id="18-chew-wei-tehtea-3-posts"><span id="18-chew-wei-tehtea-3-posts" class="anchor"></span>18. CHEW.. WEI <code class="hljs inline no-lang" v-pre>@tehtea</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#18-chew-wei-tehtea-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/49" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Disabling Java CI Action for tP temporarily</strong></p>
+              </template>
+              <p>Hello, we were facing some checkstyle failures with our initial tP PRs so we wanted to disable the Java CI Action for now since these are just initial parts of the code. I want to check, does it disable anything else that's required if we do that, because I see that there might be other tasks in <code class="hljs inline no-lang" v-pre>gradle.yml</code>.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/12#issuecomment-763549037" expanded><template slot="header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Nah, for each question repository you have to:</p>
+              <ol>
+                <li>
+                  <p>Clone the repository</p>
+                </li>
+                <li>
+                  <p>Make changes to the code such that the tests in the repository can be passed</p>
+                </li>
+                <li>
+                  <p>Commit your changes and push it back to GitHub.</p>
+                </li>
+              </ol>
+              <p>Then, the Autograding workflow will run the test cases, and if your changes passed the test cases you'll get the tick.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/15#issuecomment-765892711" expanded><template slot="header">
                 <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
-              <p>Thanks all for the help. In the end, I think i managed to login by setting the following:</p>
-              <p><a href="https://user-images.githubusercontent.com/77458324/104897509-6b59d700-59b3-11eb-9b6b-aed773536fce.png" target="_self"><img src="https://user-images.githubusercontent.com/77458324/104897509-6b59d700-59b3-11eb-9b6b-aed773536fce.png" alt class="img-fluid"></a></p>
-              <p>Once i type in my username and click on &quot;Refresh OAuth Token&quot;, it will lead me to a webpage and i just have to allow access.</p>
+              <p>It's because Windows has a different line ending (<code class="hljs inline no-lang" v-pre>\r\n</code>) compared to Linux (<code class="hljs inline no-lang" v-pre>\n</code>) which is used by the platform for running the test cases.</p>
+              <p>Try replacing each <code class="hljs inline no-lang" v-pre>System.out.println(thingToPrint)</code> call with <code class="hljs inline no-lang" v-pre>System.out.print(thingToPrint + '\n')</code> instead as a temporary workaround... trying to find a more permanent one too myself.
+              </p>
             </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="17-choi-njae-wjchoi0712-3-posts"><template slot="header">
-              <h3 id="17-choi-njae-wjchoi0712-3-posts"><span id="17-choi-njae-wjchoi0712-3-posts" class="anchor"></span>17. CHOI..NJAE <code class="hljs inline no-lang" v-pre>@wjchoi0712</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="19-choi-njae-wjchoi0712-3-posts"><template slot="header">
+              <h3 id="19-choi-njae-wjchoi0712-3-posts"><span id="19-choi-njae-wjchoi0712-3-posts" class="anchor"></span>19. CHOI..NJAE <code class="hljs inline no-lang" v-pre>@wjchoi0712</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#17-choi-njae-wjchoi0712-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#19-choi-njae-wjchoi0712-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/10#issuecomment-762407985" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1341,10 +1460,10 @@ while (!isExit) {
               <p>Shouldn't the &quot;true&quot; in the sentence be &quot;false&quot;?</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="18-a-ak-amed-iamakilahamed-3-posts"><template slot="header">
-              <h3 id="18-a-ak-amed-iamakilahamed-3-posts"><span id="18-a-ak-amed-iamakilahamed-3-posts" class="anchor"></span>18. A AK..AMED <code class="hljs inline no-lang" v-pre>@iamakilahamed</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="20-a-ak-amed-iamakilahamed-3-posts"><template slot="header">
+              <h3 id="20-a-ak-amed-iamakilahamed-3-posts"><span id="20-a-ak-amed-iamakilahamed-3-posts" class="anchor"></span>20. A AK..AMED <code class="hljs inline no-lang" v-pre>@iamakilahamed</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#18-a-ak-amed-iamakilahamed-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#20-a-ak-amed-iamakilahamed-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/37" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Problem with rendering markdown tables</strong></p>
@@ -1375,10 +1494,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="19-li-k-xuan-cocokkkk-3-posts"><template slot="header">
-              <h3 id="19-li-k-xuan-cocokkkk-3-posts"><span id="19-li-k-xuan-cocokkkk-3-posts" class="anchor"></span>19. LI K..XUAN <code class="hljs inline no-lang" v-pre>@Cocokkkk</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="21-li-k-xuan-cocokkkk-3-posts"><template slot="header">
+              <h3 id="21-li-k-xuan-cocokkkk-3-posts"><span id="21-li-k-xuan-cocokkkk-3-posts" class="anchor"></span>21. LI K..XUAN <code class="hljs inline no-lang" v-pre>@Cocokkkk</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#19-li-k-xuan-cocokkkk-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#21-li-k-xuan-cocokkkk-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/9#issuecomment-762809075" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1401,8 +1520,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="20-ivan-i-en-ivanchongzhien-3-posts"><template slot="header">
-              <h3 id="20-ivan-i-en-ivanchongzhien-3-posts"><span id="20-ivan-i-en-ivanchongzhien-3-posts" class="anchor"></span>20. IVAN..I EN <code class="hljs inline no-lang" v-pre>@ivanchongzhien</code> (3 posts)<a class="fa fa-anchor" href="#20-ivan-i-en-ivanchongzhien-3-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="22-ivan-i-en-ivanchongzhien-3-posts"><template slot="header">
+              <h3 id="22-ivan-i-en-ivanchongzhien-3-posts"><span id="22-ivan-i-en-ivanchongzhien-3-posts" class="anchor"></span>22. IVAN..I EN <code class="hljs inline no-lang" v-pre>@ivanchongzhien</code> (3 posts)<a class="fa fa-anchor" href="#22-ivan-i-en-ivanchongzhien-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/15" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Build failed with an exception when testing exercises locally but passes on Github</strong></p>
@@ -1433,10 +1552,42 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="21-zhu-ikun-zikunz-3-posts"><template slot="header">
-              <h3 id="21-zhu-ikun-zikunz-3-posts"><span id="21-zhu-ikun-zikunz-3-posts" class="anchor"></span>21. ZHU ..IKUN <code class="hljs inline no-lang" v-pre>@zikunz</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="23-mark-eong-marklowsk-3-posts"><template slot="header">
+              <h3 id="23-mark-eong-marklowsk-3-posts"><span id="23-mark-eong-marklowsk-3-posts" class="anchor"></span>23. MARK..EONG <code class="hljs inline no-lang" v-pre>@marklowsk</code> (3 posts)<a class="fa fa-anchor" href="#23-mark-eong-marklowsk-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/44" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request for permission to use Apache Commons Lang library</strong></p>
+              </template>
+              <h2 id="library-3"><span id="library-3" class="anchor"></span>Library<a class="fa fa-anchor" href="#library-3" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="http://commons.apache.org/proper/commons-lang/">Apache Commons Lang Library</a></p>
+              <p><a href="https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.4">commons-lang3 (MVNrepository)</a></p>
+              <h2 id="purpose-3"><span id="purpose-3" class="anchor"></span>Purpose<a class="fa fa-anchor" href="#purpose-3" onclick="event.stopPropagation()"></a></h2>
+              <p>This library is used for parsing user input strings into a command and/or its argument(s).</p>
+              <h2 id="license-3"><span id="license-3" class="anchor"></span>License<a class="fa fa-anchor" href="#license-3" onclick="event.stopPropagation()"></a></h2>
+              <p>commons-lang3 (v3.4) is released under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.</p>
+              <p>Stated under <a href="https://github.com/apache/commons-lang/tree/4777c3a5e4291af2420db57d008152c70c4a8f24/">README.md &gt; License</a>.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/44#issuecomment-792509931" expanded><template slot="header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thanks Prof, will let you know the updated version we will change to.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/44#issuecomment-792698529" expanded><template slot="header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>My team and I decided to use version 3.11.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="24-zhu-ikun-zikunz-3-posts"><template slot="header">
+              <h3 id="24-zhu-ikun-zikunz-3-posts"><span id="24-zhu-ikun-zikunz-3-posts" class="anchor"></span>24. ZHU ..IKUN <code class="hljs inline no-lang" v-pre>@zikunz</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#21-zhu-ikun-zikunz-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#24-zhu-ikun-zikunz-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/5#issuecomment-761740680" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1461,8 +1612,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="22-wong-hong-jadenwjh-2-posts"><template slot="header">
-              <h3 id="22-wong-hong-jadenwjh-2-posts"><span id="22-wong-hong-jadenwjh-2-posts" class="anchor"></span>22. WONG..HONG <code class="hljs inline no-lang" v-pre>@jadenwjh</code> (2 posts)<a class="fa fa-anchor" href="#22-wong-hong-jadenwjh-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="25-wong-hong-jadenwjh-2-posts"><template slot="header">
+              <h3 id="25-wong-hong-jadenwjh-2-posts"><span id="25-wong-hong-jadenwjh-2-posts" class="anchor"></span>25. WONG..HONG <code class="hljs inline no-lang" v-pre>@jadenwjh</code> (2 posts)<a class="fa fa-anchor" href="#25-wong-hong-jadenwjh-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/29" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 4] Waiting for invitation from module organization</strong></p>
@@ -1478,41 +1629,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="23-chew-wei-tehtea-2-posts"><template slot="header">
-              <h3 id="23-chew-wei-tehtea-2-posts"><span id="23-chew-wei-tehtea-2-posts" class="anchor"></span>23. CHEW.. WEI <code class="hljs inline no-lang" v-pre>@tehtea</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#23-chew-wei-tehtea-2-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/12#issuecomment-763549037" expanded><template slot="header">
-                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Nah, for each question repository you have to:</p>
-              <ol>
-                <li>
-                  <p>Clone the repository</p>
-                </li>
-                <li>
-                  <p>Make changes to the code such that the tests in the repository can be passed</p>
-                </li>
-                <li>
-                  <p>Commit your changes and push it back to GitHub.</p>
-                </li>
-              </ol>
-              <p>Then, the Autograding workflow will run the test cases, and if your changes passed the test cases you'll get the tick.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/15#issuecomment-765892711" expanded><template slot="header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>It's because Windows has a different line ending (<code class="hljs inline no-lang" v-pre>\r\n</code>) compared to Linux (<code class="hljs inline no-lang" v-pre>\n</code>) which is used by the platform for running the test cases.</p>
-              <p>Try replacing each <code class="hljs inline no-lang" v-pre>System.out.println(thingToPrint)</code> call with <code class="hljs inline no-lang" v-pre>System.out.print(thingToPrint + '\n')</code> instead as a temporary workaround... trying to find a more permanent one too myself.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="24-ge-z-oyan-geezzzyyy-2-posts"><template slot="header">
-              <h3 id="24-ge-z-oyan-geezzzyyy-2-posts"><span id="24-ge-z-oyan-geezzzyyy-2-posts" class="anchor"></span>24. GE Z..OYAN <code class="hljs inline no-lang" v-pre>@geezzzyyy</code> (2 posts)<a class="fa fa-anchor" href="#24-ge-z-oyan-geezzzyyy-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="26-ge-z-oyan-geezzzyyy-2-posts"><template slot="header">
+              <h3 id="26-ge-z-oyan-geezzzyyy-2-posts"><span id="26-ge-z-oyan-geezzzyyy-2-posts" class="anchor"></span>26. GE Z..OYAN <code class="hljs inline no-lang" v-pre>@geezzzyyy</code> (2 posts)<a class="fa fa-anchor" href="#26-ge-z-oyan-geezzzyyy-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/18" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Unable to push using sourcetree</strong></p>
@@ -1535,10 +1653,10 @@ while (!isExit) {
               </blockquote>
             </panel>
           </panel>
-          <panel type="info" collapsed id="25-hu-w-enqi-vinci-hu-2-posts"><template slot="header">
-              <h3 id="25-hu-w-enqi-vinci-hu-2-posts"><span id="25-hu-w-enqi-vinci-hu-2-posts" class="anchor"></span>25. HU W..ENQI <code class="hljs inline no-lang" v-pre>@Vinci-Hu</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="27-hu-w-enqi-vinci-hu-2-posts"><template slot="header">
+              <h3 id="27-hu-w-enqi-vinci-hu-2-posts"><span id="27-hu-w-enqi-vinci-hu-2-posts" class="anchor"></span>27. HU W..ENQI <code class="hljs inline no-lang" v-pre>@Vinci-Hu</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#25-hu-w-enqi-vinci-hu-2-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#27-hu-w-enqi-vinci-hu-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/5" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Cannot find my identifier when trying to join github classroom</strong></p>
@@ -1556,8 +1674,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="26-owen-g-en-blank-bank-2-posts"><template slot="header">
-              <h3 id="26-owen-g-en-blank-bank-2-posts"><span id="26-owen-g-en-blank-bank-2-posts" class="anchor"></span>26. OWEN..G EN <code class="hljs inline no-lang" v-pre>@blank-bank</code> (2 posts)<a class="fa fa-anchor" href="#26-owen-g-en-blank-bank-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="28-owen-g-en-blank-bank-2-posts"><template slot="header">
+              <h3 id="28-owen-g-en-blank-bank-2-posts"><span id="28-owen-g-en-blank-bank-2-posts" class="anchor"></span>28. OWEN..G EN <code class="hljs inline no-lang" v-pre>@blank-bank</code> (2 posts)<a class="fa fa-anchor" href="#28-owen-g-en-blank-bank-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/17" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Usage of strip() vs trim()</strong></p>
@@ -1578,8 +1696,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="27-tan-xern-tzexern-2-posts"><template slot="header">
-              <h3 id="27-tan-xern-tzexern-2-posts"><span id="27-tan-xern-tzexern-2-posts" class="anchor"></span>27. TAN ..XERN <code class="hljs inline no-lang" v-pre>@tzexern</code> (2 posts)<a class="fa fa-anchor" href="#27-tan-xern-tzexern-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="29-tan-xern-tzexern-2-posts"><template slot="header">
+              <h3 id="29-tan-xern-tzexern-2-posts"><span id="29-tan-xern-tzexern-2-posts" class="anchor"></span>29. TAN ..XERN <code class="hljs inline no-lang" v-pre>@tzexern</code> (2 posts)<a class="fa fa-anchor" href="#29-tan-xern-tzexern-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/33" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Week6-Lecture-Part3</strong></p>
@@ -1598,10 +1716,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="28-jalv-iang-jalvinchan-1-posts"><template slot="header">
-              <h3 id="28-jalv-iang-jalvinchan-1-posts"><span id="28-jalv-iang-jalvinchan-1-posts" class="anchor"></span>28. JALV..IANG <code class="hljs inline no-lang" v-pre>@jalvinchan</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="30-jalv-iang-jalvinchan-1-posts"><template slot="header">
+              <h3 id="30-jalv-iang-jalvinchan-1-posts"><span id="30-jalv-iang-jalvinchan-1-posts" class="anchor"></span>30. JALV..IANG <code class="hljs inline no-lang" v-pre>@jalvinchan</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#28-jalv-iang-jalvinchan-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#30-jalv-iang-jalvinchan-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/9#issuecomment-762306888" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1613,10 +1731,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="29-muha-amal-zufiqqar-1-posts"><template slot="header">
-              <h3 id="29-muha-amal-zufiqqar-1-posts"><span id="29-muha-amal-zufiqqar-1-posts" class="anchor"></span>29. MUHA..AMAL <code class="hljs inline no-lang" v-pre>@Zufiqqar</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="31-muha-amal-zufiqqar-1-posts"><template slot="header">
+              <h3 id="31-muha-amal-zufiqqar-1-posts"><span id="31-muha-amal-zufiqqar-1-posts" class="anchor"></span>31. MUHA..AMAL <code class="hljs inline no-lang" v-pre>@Zufiqqar</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#29-muha-amal-zufiqqar-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#31-muha-amal-zufiqqar-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/12" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> GitHub Classroom Autograding Workflow</strong></p>
@@ -1626,8 +1744,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="30-liu-qian-lowwilliam-1-posts"><template slot="header">
-              <h3 id="30-liu-qian-lowwilliam-1-posts"><span id="30-liu-qian-lowwilliam-1-posts" class="anchor"></span>30. LIU ..QIAN <code class="hljs inline no-lang" v-pre>@lowwilliam</code> (1 posts)<a class="fa fa-anchor" href="#30-liu-qian-lowwilliam-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="32-liu-qian-lowwilliam-1-posts"><template slot="header">
+              <h3 id="32-liu-qian-lowwilliam-1-posts"><span id="32-liu-qian-lowwilliam-1-posts" class="anchor"></span>32. LIU ..QIAN <code class="hljs inline no-lang" v-pre>@lowwilliam</code> (1 posts)<a class="fa fa-anchor" href="#32-liu-qian-lowwilliam-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/21" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> I try to push commits to github but fail the grading</strong></p>
@@ -1639,10 +1757,25 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="31-bund-rish-h-horizon-1-posts"><template slot="header">
-              <h3 id="31-bund-rish-h-horizon-1-posts"><span id="31-bund-rish-h-horizon-1-posts" class="anchor"></span>31. BUND..RISH <code class="hljs inline no-lang" v-pre>@H-horizon</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="33-see-han-blubbermonster-1-posts"><template slot="header">
+              <h3 id="33-see-han-blubbermonster-1-posts"><span id="33-see-han-blubbermonster-1-posts" class="anchor"></span>33. SEE .. HAN <code class="hljs inline no-lang" v-pre>@BlubberMonster</code> (1 posts)<a class="fa fa-anchor" href="#33-see-han-blubbermonster-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/46" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request for permission to use Apache Commons Validator</strong></p>
+              </template>
+              <h2 id="library-4"><span id="library-4" class="anchor"></span>Library<a class="fa fa-anchor" href="#library-4" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="http://commons.apache.org/proper/commons-validator/">Apache Commons Validator Library</a></p>
+              <p><a href="https://mvnrepository.com/artifact/commons-validator/commons-validator/1.7">commons-validator 1.7 MVNrepo</a></p>
+              <h2 id="purpose-4"><span id="purpose-4" class="anchor"></span>Purpose<a class="fa fa-anchor" href="#purpose-4" onclick="event.stopPropagation()"></a></h2>
+              <p>This library is used to validate a given URL input</p>
+              <h2 id="license-4"><span id="license-4" class="anchor"></span>License<a class="fa fa-anchor" href="#license-4" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p>
+            </panel>
+          </panel>
+          <panel type="info" collapsed id="34-bund-rish-h-horizon-1-posts"><template slot="header">
+              <h3 id="34-bund-rish-h-horizon-1-posts"><span id="34-bund-rish-h-horizon-1-posts" class="anchor"></span>34. BUND..RISH <code class="hljs inline no-lang" v-pre>@H-horizon</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#31-bund-rish-h-horizon-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#34-bund-rish-h-horizon-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/26#issuecomment-770166991" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1653,20 +1786,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="32-haze-tan-hazelhedmine-1-posts"><template slot="header">
-              <h3 id="32-haze-tan-hazelhedmine-1-posts"><span id="32-haze-tan-hazelhedmine-1-posts" class="anchor"></span>32. HAZE.. TAN <code class="hljs inline no-lang" v-pre>@hazelhedmine</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#32-haze-tan-hazelhedmine-1-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/6" expanded><template slot="header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> sourcetree credential helper selector</strong></p>
-              </template>
-              <p>Hi, whenever I use source tree to clone/push anything the credential helper selector keep popping up and I'm not sure what to select. Just clicking cancel works but it will still pop up the next time I use source tree. Does anyone know which option I should select or is there a way to get rid of it? Thank you!</p>
-              <p><a href="https://user-images.githubusercontent.com/66232361/104836399-bf4bb980-58e8-11eb-84e8-0a71f2bd19b6.png" target="_self"><img src="https://user-images.githubusercontent.com/66232361/104836399-bf4bb980-58e8-11eb-84e8-0a71f2bd19b6.png" alt class="img-fluid"></a></p>
-            </panel>
-          </panel>
-          <panel type="info" collapsed id="33-qiu-wen-e00426142-1-posts"><template slot="header">
-              <h3 id="33-qiu-wen-e00426142-1-posts"><span id="33-qiu-wen-e00426142-1-posts" class="anchor"></span>33. QIU .. WEN <code class="hljs inline no-lang" v-pre>@e00426142</code> (1 posts)<a class="fa fa-anchor" href="#33-qiu-wen-e00426142-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="35-qiu-wen-e00426142-1-posts"><template slot="header">
+              <h3 id="35-qiu-wen-e00426142-1-posts"><span id="35-qiu-wen-e00426142-1-posts" class="anchor"></span>35. QIU .. WEN <code class="hljs inline no-lang" v-pre>@e00426142</code> (1 posts)<a class="fa fa-anchor" href="#35-qiu-wen-e00426142-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/25#issuecomment-771490427" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1676,10 +1797,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="34-xia-fuxi-fupernova-1-posts"><template slot="header">
-              <h3 id="34-xia-fuxi-fupernova-1-posts"><span id="34-xia-fuxi-fupernova-1-posts" class="anchor"></span>34. XIA ..FUXI <code class="hljs inline no-lang" v-pre>@fupernova</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="36-xia-fuxi-fupernova-1-posts"><template slot="header">
+              <h3 id="36-xia-fuxi-fupernova-1-posts"><span id="36-xia-fuxi-fupernova-1-posts" class="anchor"></span>36. XIA ..FUXI <code class="hljs inline no-lang" v-pre>@fupernova</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#34-xia-fuxi-fupernova-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#36-xia-fuxi-fupernova-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/11#issuecomment-762806531" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1701,37 +1822,39 @@ while (!isExit) {
               <a class="nav-link py-1" href="#1-lee-peng-leeyp-21-posts">1. LEE ..PENG @Leeyp (21 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#2-chon-hao-8kdesign-13-posts">2. CHON.. HAO @8kdesign (13 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#3-zhon-uhao-rye98-11-posts">3. ZHON..UHAO @Rye98 (11 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#4-jova-chun-jovanhuang-10-posts">4. JOVA..CHUN @jovanhuang (10 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#5-cao-uwen-cswbibibi-9-posts">5. CAO ..UWEN @cswbibibi (9 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#6-ryan-kwok-kwokyto-8-posts">6. RYAN..KWOK @kwokyto (8 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#4-ryan-kwok-kwokyto-10-posts">4. RYAN..KWOK @kwokyto (10 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#5-jova-chun-jovanhuang-10-posts">5. JOVA..CHUN @jovanhuang (10 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#6-cao-uwen-cswbibibi-9-posts">6. CAO ..UWEN @cswbibibi (9 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#7-ng-m-sing-ngmansing-6-posts">7. NG M..SING @NgManSing (6 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#8-chua-wei-heyjinwei-5-posts">8. CHUA.. WEI @heyjinwei (5 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#9-song-g-yu-song0180-5-posts">9. SONG..G YU @Song0180 (5 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#10-lok-wen-kewenlok-5-posts">10. LOK .. WEN @kewenlok (5 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#11-lee-andy-leehanyongandy-5-posts">11. LEE ..ANDY @LeeHanYongAndy (5 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#12-yeun-seng-joviyeung92-4-posts">12. YEUN..SENG @JoviYeung92 (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#13-jona-yang-jonathankhooty-4-posts">13. JONA..YANG @JonathanKhooTY (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#14-jona-long-jonahtwl-4-posts">14. JONA..LONG @jonahtwl (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#15-osca-lai-oscarlai1998-4-posts">15. OSCA.. LAI @oscarlai1998 (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#16-farm-hao-farmzh98-3-posts">16. FARM.. HAO @FarmZH98 (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#17-choi-njae-wjchoi0712-3-posts">17. CHOI..NJAE @wjchoi0712 (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#18-a-ak-amed-iamakilahamed-3-posts">18. A AK..AMED @iamakilahamed (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#19-li-k-xuan-cocokkkk-3-posts">19. LI K..XUAN @Cocokkkk (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#20-ivan-i-en-ivanchongzhien-3-posts">20. IVAN..I EN @ivanchongzhien (3 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#21-zhu-ikun-zikunz-3-posts">21. ZHU ..IKUN @zikunz (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#22-wong-hong-jadenwjh-2-posts">22. WONG..HONG @jadenwjh (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#23-chew-wei-tehtea-2-posts">23. CHEW.. WEI @tehtea (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#24-ge-z-oyan-geezzzyyy-2-posts">24. GE Z..OYAN @geezzzyyy (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#25-hu-w-enqi-vinci-hu-2-posts">25. HU W..ENQI @Vinci-Hu (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#26-owen-g-en-blank-bank-2-posts">26. OWEN..G EN @blank-bank (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#27-tan-xern-tzexern-2-posts">27. TAN ..XERN @tzexern (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#28-jalv-iang-jalvinchan-1-posts">28. JALV..IANG @jalvinchan (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#29-muha-amal-zufiqqar-1-posts">29. MUHA..AMAL @Zufiqqar (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#30-liu-qian-lowwilliam-1-posts">30. LIU ..QIAN @lowwilliam (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#31-bund-rish-h-horizon-1-posts">31. BUND..RISH @H-horizon (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#32-haze-tan-hazelhedmine-1-posts">32. HAZE.. TAN @hazelhedmine (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#33-qiu-wen-e00426142-1-posts">33. QIU .. WEN @e00426142 (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#34-xia-fuxi-fupernova-1-posts">34. XIA ..FUXI @fupernova (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#12-jona-long-jonahtwl-5-posts">12. JONA..LONG @jonahtwl (5 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#13-farm-hao-farmzh98-4-posts">13. FARM.. HAO @FarmZH98 (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#14-yeun-seng-joviyeung92-4-posts">14. YEUN..SENG @JoviYeung92 (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#15-jona-yang-jonathankhooty-4-posts">15. JONA..YANG @JonathanKhooTY (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#16-osca-lai-oscarlai1998-4-posts">16. OSCA.. LAI @oscarlai1998 (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#17-haze-tan-hazelhedmine-4-posts">17. HAZE.. TAN @hazelhedmine (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#18-chew-wei-tehtea-3-posts">18. CHEW.. WEI @tehtea (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#19-choi-njae-wjchoi0712-3-posts">19. CHOI..NJAE @wjchoi0712 (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#20-a-ak-amed-iamakilahamed-3-posts">20. A AK..AMED @iamakilahamed (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#21-li-k-xuan-cocokkkk-3-posts">21. LI K..XUAN @Cocokkkk (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#22-ivan-i-en-ivanchongzhien-3-posts">22. IVAN..I EN @ivanchongzhien (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#23-mark-eong-marklowsk-3-posts">23. MARK..EONG @marklowsk (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#24-zhu-ikun-zikunz-3-posts">24. ZHU ..IKUN @zikunz (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#25-wong-hong-jadenwjh-2-posts">25. WONG..HONG @jadenwjh (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#26-ge-z-oyan-geezzzyyy-2-posts">26. GE Z..OYAN @geezzzyyy (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#27-hu-w-enqi-vinci-hu-2-posts">27. HU W..ENQI @Vinci-Hu (2 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#28-owen-g-en-blank-bank-2-posts">28. OWEN..G EN @blank-bank (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#29-tan-xern-tzexern-2-posts">29. TAN ..XERN @tzexern (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#30-jalv-iang-jalvinchan-1-posts">30. JALV..IANG @jalvinchan (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#31-muha-amal-zufiqqar-1-posts">31. MUHA..AMAL @Zufiqqar (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#32-liu-qian-lowwilliam-1-posts">32. LIU ..QIAN @lowwilliam (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#33-see-han-blubbermonster-1-posts">33. SEE .. HAN @BlubberMonster (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#34-bund-rish-h-horizon-1-posts">34. BUND..RISH @H-horizon (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#35-qiu-wen-e00426142-1-posts">35. QIU .. WEN @e00426142 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#36-xia-fuxi-fupernova-1-posts">36. XIA ..FUXI @fupernova (1 posts) &#x200E;</a>
             </nav>
 
           </nav>
@@ -1741,7 +1864,7 @@ while (!isExit) {
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.3</a>, generated on Mon, 15 Mar 2021, 0:27:42 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.3</a>, generated on Mon, 15 Mar 2021, 1:39:01 GMT+8]</small>
       </div>
     </footer>
   </div>
