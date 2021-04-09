@@ -54,7 +54,7 @@
         <h1 class="display-4" id="forum-activities-dashboard"><span id="forum-activities-dashboard" class="anchor"></span>Forum activities dashboard<a class="fa fa-anchor" href="#forum-activities-dashboard" onclick="event.stopPropagation()"></a></h1>
         <p>This dashboard is <strong>updated weekly</strong>.</p>
         <div>
-          <p><span class="dimmed">[This page was last updated on Apr 02 2021]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <p><span class="dimmed">[This page was last updated on Apr 08 2021]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                   <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
                 </svg></span> indicates those <em>watching</em> the forum</strong> (kudos 👍)]</p>
           <panel type="info" collapsed id="1-lee-peng-leeyp-21-posts"><template slot="header">
@@ -986,8 +986,84 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="9-song-g-yu-song0180-5-posts"><template slot="header">
-              <h3 id="9-song-g-yu-song0180-5-posts"><span id="9-song-g-yu-song0180-5-posts" class="anchor"></span>9. SONG..G YU <code class="hljs inline no-lang" v-pre>@Song0180</code> (5 posts)<a class="fa fa-anchor" href="#9-song-g-yu-song0180-5-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="9-yeun-seng-joviyeung92-5-posts"><template slot="header">
+              <h3 id="9-yeun-seng-joviyeung92-5-posts"><span id="9-yeun-seng-joviyeung92-5-posts" class="anchor"></span>9. YEUN..SENG <code class="hljs inline no-lang" v-pre>@JoviYeung92</code> (5 posts)<a class="fa fa-anchor" href="#9-yeun-seng-joviyeung92-5-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/56" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡Guide to bundle resources to jar file and handling it.</strong></p>
+              </template>
+              <p>Hi everyone, i will provide the guide on how to bundle and handle the resource in the jar file.</p>
+              <ol>
+                <li>
+                  <p>First, create a resource directory under the build path.</p>
+                </li>
+                <li>
+                  <p>You need to put your resource(eg txt file) into that resource directory.</p>
+                </li>
+              </ol>
+              <p><a href="https://user-images.githubusercontent.com/77476720/113600586-d2ae2b80-9672-11eb-8290-f451c9bc0cb5.jpg" target="_self"><img src="https://user-images.githubusercontent.com/77476720/113600586-d2ae2b80-9672-11eb-8290-f451c9bc0cb5.jpg" alt class="img-fluid"></a></p>
+              <p>3)When you build your shadow jar the resource is supposed to be inside(to check just open it with winrar).</p>
+              <ol start="4">
+                <li>
+                  <p>To access this resource file, you will first need to create a InputStream and direct it to your resource directory.</p>
+                </li>
+                <li>
+                  <p>Next, create a InputStreamReader to store the content of your inputStream. (You cannot use FileReader because the resource will be inside your jar file and your jar file is like a ZIP file.)</p>
+                </li>
+              </ol>
+              <p>6)Next, once the data is stored into your InputStreamReader you will need a BufferedReader to decrypt and read the content like how you read a normal file using file reader.</p>
+              <p><strong>Note:</strong> You cannot write to the resource file inside the jar file, it is meant to be read only. If you want, you can copy the file inside the resource of the jar and save it outside the jar file.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/39" expanded><template slot="header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> PR merge</strong></p>
+              </template>
+              <p>Hi, when we do a PR merge on GITHUB they will prompt to delete away the old branch . Is it okay if we delete that old branch ?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/28" expanded><template slot="header">
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> Teamwork submission link for TP this week</strong></p>
+              </template>
+              <p>Submission: Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. Only one member needs to submit on behalf of the team. All members can view/update the submission.</p>
+              <p>Hi prof,</p>
+              <p>When will the submission link be avail? Thank You
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761759859" expanded><template slot="header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>If i don't push my file from source tree i can also edit it directly from the main file inside github right?</p>
+              <p>How can we know our codes are 100% correct? Are there any checkers?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761824863" expanded><template slot="header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>@JoviYeung92 just to be sure I answer correctly, are you talking about the individual project (iP) or the exercises on GitHub classroom?</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>For iP, each increment would add something new to the codebase you have developed so far. You need to test it on your machine to see if things are working. During the tutorials, you are required to show a quick demo to your tutors. So things get validated there.</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>If you are talking about the exercises on GitHub classrooms, there are tests that run via GitHub actions (as mentioned by @8kdesign ) if the test passes, you are doing the right thing.</p>
+              </blockquote>
+              <blockquote>
+                <p>I am preparing a video to demonstrate how to import the exercise to the IDE, do your development and testing; once your tests pass locally, you can push your code, which forms the submissions.</p>
+              </blockquote>
+              <p>okay prof, thanks for the information.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="10-song-g-yu-song0180-5-posts"><template slot="header">
+              <h3 id="10-song-g-yu-song0180-5-posts"><span id="10-song-g-yu-song0180-5-posts" class="anchor"></span>10. SONG..G YU <code class="hljs inline no-lang" v-pre>@Song0180</code> (5 posts)<a class="fa fa-anchor" href="#10-song-g-yu-song0180-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/11#issuecomment-763702871" expanded><template slot="header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1054,10 +1130,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="10-lok-wen-kewenlok-5-posts"><template slot="header">
-              <h3 id="10-lok-wen-kewenlok-5-posts"><span id="10-lok-wen-kewenlok-5-posts" class="anchor"></span>10. LOK .. WEN <code class="hljs inline no-lang" v-pre>@kewenlok</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="11-lok-wen-kewenlok-5-posts"><template slot="header">
+              <h3 id="11-lok-wen-kewenlok-5-posts"><span id="11-lok-wen-kewenlok-5-posts" class="anchor"></span>11. LOK .. WEN <code class="hljs inline no-lang" v-pre>@kewenlok</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#10-lok-wen-kewenlok-5-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#11-lok-wen-kewenlok-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/40" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request for permission to use Argparse4j library</strong></p>
@@ -1103,8 +1179,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="11-lee-andy-leehanyongandy-5-posts"><template slot="header">
-              <h3 id="11-lee-andy-leehanyongandy-5-posts"><span id="11-lee-andy-leehanyongandy-5-posts" class="anchor"></span>11. LEE ..ANDY <code class="hljs inline no-lang" v-pre>@LeeHanYongAndy</code> (5 posts)<a class="fa fa-anchor" href="#11-lee-andy-leehanyongandy-5-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="12-lee-andy-leehanyongandy-5-posts"><template slot="header">
+              <h3 id="12-lee-andy-leehanyongandy-5-posts"><span id="12-lee-andy-leehanyongandy-5-posts" class="anchor"></span>12. LEE ..ANDY <code class="hljs inline no-lang" v-pre>@LeeHanYongAndy</code> (5 posts)<a class="fa fa-anchor" href="#12-lee-andy-leehanyongandy-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/26" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Java Exercises (Week 4 Exercise 3)</strong></p>
@@ -1199,8 +1275,8 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="12-jona-long-jonahtwl-5-posts"><template slot="header">
-              <h3 id="12-jona-long-jonahtwl-5-posts"><span id="12-jona-long-jonahtwl-5-posts" class="anchor"></span>12. JONA..LONG <code class="hljs inline no-lang" v-pre>@jonahtwl</code> (5 posts)<a class="fa fa-anchor" href="#12-jona-long-jonahtwl-5-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="13-jona-long-jonahtwl-5-posts"><template slot="header">
+              <h3 id="13-jona-long-jonahtwl-5-posts"><span id="13-jona-long-jonahtwl-5-posts" class="anchor"></span>13. JONA..LONG <code class="hljs inline no-lang" v-pre>@jonahtwl</code> (5 posts)<a class="fa fa-anchor" href="#13-jona-long-jonahtwl-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/32" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Issues with text-ui-tests</strong></p>
@@ -1261,10 +1337,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="13-haze-tan-hazelhedmine-5-posts"><template slot="header">
-              <h3 id="13-haze-tan-hazelhedmine-5-posts"><span id="13-haze-tan-hazelhedmine-5-posts" class="anchor"></span>13. HAZE.. TAN <code class="hljs inline no-lang" v-pre>@hazelhedmine</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="14-haze-tan-hazelhedmine-5-posts"><template slot="header">
+              <h3 id="14-haze-tan-hazelhedmine-5-posts"><span id="14-haze-tan-hazelhedmine-5-posts" class="anchor"></span>14. HAZE.. TAN <code class="hljs inline no-lang" v-pre>@hazelhedmine</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#13-haze-tan-hazelhedmine-5-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#14-haze-tan-hazelhedmine-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/50" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Are we supposed to update text-ui-test and AboutMe page?</strong></p>
@@ -1305,10 +1381,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="14-farm-hao-farmzh98-4-posts"><template slot="header">
-              <h3 id="14-farm-hao-farmzh98-4-posts"><span id="14-farm-hao-farmzh98-4-posts" class="anchor"></span>14. FARM.. HAO <code class="hljs inline no-lang" v-pre>@FarmZH98</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="15-farm-hao-farmzh98-4-posts"><template slot="header">
+              <h3 id="15-farm-hao-farmzh98-4-posts"><span id="15-farm-hao-farmzh98-4-posts" class="anchor"></span>15. FARM.. HAO <code class="hljs inline no-lang" v-pre>@FarmZH98</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#14-farm-hao-farmzh98-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#15-farm-hao-farmzh98-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/47" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> tP implementation</strong></p>
@@ -1350,57 +1426,40 @@ while (!isExit) {
               <p>Once i type in my username and click on &quot;Refresh OAuth Token&quot;, it will lead me to a webpage and i just have to allow access.</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="15-yeun-seng-joviyeung92-4-posts"><template slot="header">
-              <h3 id="15-yeun-seng-joviyeung92-4-posts"><span id="15-yeun-seng-joviyeung92-4-posts" class="anchor"></span>15. YEUN..SENG <code class="hljs inline no-lang" v-pre>@JoviYeung92</code> (4 posts)<a class="fa fa-anchor" href="#15-yeun-seng-joviyeung92-4-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="16-wong-hong-jadenwjh-4-posts"><template slot="header">
+              <h3 id="16-wong-hong-jadenwjh-4-posts"><span id="16-wong-hong-jadenwjh-4-posts" class="anchor"></span>16. WONG..HONG <code class="hljs inline no-lang" v-pre>@jadenwjh</code> (4 posts)<a class="fa fa-anchor" href="#16-wong-hong-jadenwjh-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/39" expanded><template slot="header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> PR merge</strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/57" expanded><template slot="header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Gradle-wrapper needs to be edited for <a href="http://runtest.sh">runtest.sh</a> / runtest.bat to build successfully</strong></p>
               </template>
-              <p>Hi, when we do a PR merge on GITHUB they will prompt to delete away the old branch . Is it okay if we delete that old branch ?
-              </p>
+              <p>Wondering if any groups are facing this issue where by:</p>
+              <p>text-ui-test is not building successfully due to the version of gradle stated in gradle-wrapper?</p>
+              <p>I am referring to the distributionUrl in gradle &gt; wrapper &gt; gradle-wrapper.properties.</p>
+              <p>6.2-bin is not working for me but once I changed to 6.3 it is fine.</p>
             </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/28" expanded><template slot="header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Teamwork submission link for TP this week</strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/55" expanded><template slot="header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Calling constructor in Sequence diagram in PlantUML</strong></p>
               </template>
-              <p>Submission: Submit your product name, target user profile, the value proposition, and the public link to your collaborative project notes via TEAMMATES. You'll receive an email from TEAMMATES with the submission link. Only one member needs to submit on behalf of the team. All members can view/update the submission.</p>
-              <p>Hi prof,</p>
-              <p>When will the submission link be avail? Thank You
-              </p>
+              <p>Is there a way to 'create' another object in PlantUML sequence diagram?</p>
+              <p>For example: Parser should create CloseCommand object. But I cant seem to join the activation block for CloseCommand to the top.</p>
+              <img width="223" alt="Screenshot 2021-04-02 at 11 11 29 AM" src="https://user-images.githubusercontent.com/62279469/113376387-2f27f700-93a4-11eb-9d83-3fc32e7b851e.png">
             </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761759859" expanded><template slot="header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/29" expanded><template slot="header">
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 4] Waiting for invitation from module organization</strong></p>
               </template>
-              <p>If i don't push my file from source tree i can also edit it directly from the main file inside github right?</p>
-              <p>How can we know our codes are 100% correct? Are there any checkers?
-              </p>
+              <p>As depicted, this week we are supposed to be accepting an invitation. However, I have yet to receive any of it + the link provided does not work. Has anyone managed to accept the invite?</p>
+              <img width="962" alt="Screenshot 2021-01-31 at 10 12 49 PM" src="https://user-images.githubusercontent.com/62279469/106386747-7c720180-6411-11eb-9b7c-6c9c924d1aa8.png">
             </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/2#issuecomment-761824863" expanded><template slot="header">
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/29#issuecomment-770394774" expanded><template slot="header">
                 <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
-              <blockquote>
-                <p>@JoviYeung92 just to be sure I answer correctly, are you talking about the individual project (iP) or the exercises on GitHub classroom?</p>
-              </blockquote>
-              <blockquote></blockquote>
-              <blockquote>
-                <p>For iP, each increment would add something new to the codebase you have developed so far. You need to test it on your machine to see if things are working. During the tutorials, you are required to show a quick demo to your tutors. So things get validated there.</p>
-              </blockquote>
-              <blockquote></blockquote>
-              <blockquote>
-                <p>If you are talking about the exercises on GitHub classrooms, there are tests that run via GitHub actions (as mentioned by @8kdesign ) if the test passes, you are doing the right thing.</p>
-              </blockquote>
-              <blockquote>
-                <p>I am preparing a video to demonstrate how to import the exercise to the IDE, do your development and testing; once your tests pass locally, you can push your code, which forms the submissions.</p>
-              </blockquote>
-              <p>okay prof, thanks for the information.
+              <p>Just received an invite
               </p>
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="16-jona-yang-jonathankhooty-4-posts"><template slot="header">
-              <h3 id="16-jona-yang-jonathankhooty-4-posts"><span id="16-jona-yang-jonathankhooty-4-posts" class="anchor"></span>16. JONA..YANG <code class="hljs inline no-lang" v-pre>@JonathanKhooTY</code> (4 posts)<a class="fa fa-anchor" href="#16-jona-yang-jonathankhooty-4-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="17-jona-yang-jonathankhooty-4-posts"><template slot="header">
+              <h3 id="17-jona-yang-jonathankhooty-4-posts"><span id="17-jona-yang-jonathankhooty-4-posts" class="anchor"></span>17. JONA..YANG <code class="hljs inline no-lang" v-pre>@JonathanKhooTY</code> (4 posts)<a class="fa fa-anchor" href="#17-jona-yang-jonathankhooty-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/7" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Invitation for Week 2 Assignment 4 disabled</strong></p>
@@ -1448,10 +1507,10 @@ while (!isExit) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="17-osca-lai-oscarlai1998-4-posts"><template slot="header">
-              <h3 id="17-osca-lai-oscarlai1998-4-posts"><span id="17-osca-lai-oscarlai1998-4-posts" class="anchor"></span>17. OSCA.. LAI <code class="hljs inline no-lang" v-pre>@oscarlai1998</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="18-osca-lai-oscarlai1998-4-posts"><template slot="header">
+              <h3 id="18-osca-lai-oscarlai1998-4-posts"><span id="18-osca-lai-oscarlai1998-4-posts" class="anchor"></span>18. OSCA.. LAI <code class="hljs inline no-lang" v-pre>@oscarlai1998</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#17-osca-lai-oscarlai1998-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#18-osca-lai-oscarlai1998-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/24" expanded><template slot="header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> When I push my code from IntelliJ to Github, tabsize is automatically size 8</strong></p>
@@ -1481,30 +1540,6 @@ while (!isExit) {
               </template>
               <p>Hello Prof, I have fixed it by just reformatting the entire code again.</p>
             </panel>
-          </panel>
-          <panel type="info" collapsed id="18-wong-hong-jadenwjh-3-posts"><template slot="header">
-              <h3 id="18-wong-hong-jadenwjh-3-posts"><span id="18-wong-hong-jadenwjh-3-posts" class="anchor"></span>18. WONG..HONG <code class="hljs inline no-lang" v-pre>@jadenwjh</code> (3 posts)<a class="fa fa-anchor" href="#18-wong-hong-jadenwjh-3-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/55" expanded><template slot="header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Calling constructor in Sequence diagram in PlantUML</strong></p>
-              </template>
-              <p>Is there a way to 'create' another object in PlantUML sequence diagram?</p>
-              <p>For example: Parser should create CloseCommand object. But I cant seem to join the activation block for CloseCommand to the top.</p>
-              <img width="223" alt="Screenshot 2021-04-02 at 11 11 29 AM" src="https://user-images.githubusercontent.com/62279469/113376387-2f27f700-93a4-11eb-9d83-3fc32e7b851e.png">
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/29" expanded><template slot="header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 4] Waiting for invitation from module organization</strong></p>
-              </template>
-              <p>As depicted, this week we are supposed to be accepting an invitation. However, I have yet to receive any of it + the link provided does not work. Has anyone managed to accept the invite?</p>
-              <img width="962" alt="Screenshot 2021-01-31 at 10 12 49 PM" src="https://user-images.githubusercontent.com/62279469/106386747-7c720180-6411-11eb-9b7c-6c9c924d1aa8.png">
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S2/forum/issues/29#issuecomment-770394774" expanded><template slot="header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Just received an invite
-              </p>
-            </panel>
-            <p></p>
           </panel>
           <panel type="info" collapsed id="19-chew-wei-tehtea-3-posts"><template slot="header">
               <h3 id="19-chew-wei-tehtea-3-posts"><span id="19-chew-wei-tehtea-3-posts" class="anchor"></span>19. CHEW.. WEI <code class="hljs inline no-lang" v-pre>@tehtea</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
@@ -1934,16 +1969,16 @@ while (!isExit) {
               <a class="nav-link py-1" href="#6-cao-uwen-cswbibibi-9-posts">6. CAO ..UWEN @cswbibibi (9 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#7-ng-m-sing-ngmansing-6-posts">7. NG M..SING @NgManSing (6 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#8-chua-wei-heyjinwei-5-posts">8. CHUA.. WEI @heyjinwei (5 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#9-song-g-yu-song0180-5-posts">9. SONG..G YU @Song0180 (5 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#10-lok-wen-kewenlok-5-posts">10. LOK .. WEN @kewenlok (5 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#11-lee-andy-leehanyongandy-5-posts">11. LEE ..ANDY @LeeHanYongAndy (5 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#12-jona-long-jonahtwl-5-posts">12. JONA..LONG @jonahtwl (5 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#13-haze-tan-hazelhedmine-5-posts">13. HAZE.. TAN @hazelhedmine (5 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#14-farm-hao-farmzh98-4-posts">14. FARM.. HAO @FarmZH98 (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#15-yeun-seng-joviyeung92-4-posts">15. YEUN..SENG @JoviYeung92 (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#16-jona-yang-jonathankhooty-4-posts">16. JONA..YANG @JonathanKhooTY (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#17-osca-lai-oscarlai1998-4-posts">17. OSCA.. LAI @oscarlai1998 (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#18-wong-hong-jadenwjh-3-posts">18. WONG..HONG @jadenwjh (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#9-yeun-seng-joviyeung92-5-posts">9. YEUN..SENG @JoviYeung92 (5 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#10-song-g-yu-song0180-5-posts">10. SONG..G YU @Song0180 (5 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#11-lok-wen-kewenlok-5-posts">11. LOK .. WEN @kewenlok (5 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#12-lee-andy-leehanyongandy-5-posts">12. LEE ..ANDY @LeeHanYongAndy (5 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#13-jona-long-jonahtwl-5-posts">13. JONA..LONG @jonahtwl (5 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#14-haze-tan-hazelhedmine-5-posts">14. HAZE.. TAN @hazelhedmine (5 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#15-farm-hao-farmzh98-4-posts">15. FARM.. HAO @FarmZH98 (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#16-wong-hong-jadenwjh-4-posts">16. WONG..HONG @jadenwjh (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#17-jona-yang-jonathankhooty-4-posts">17. JONA..YANG @JonathanKhooTY (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#18-osca-lai-oscarlai1998-4-posts">18. OSCA.. LAI @oscarlai1998 (4 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#19-chew-wei-tehtea-3-posts">19. CHEW.. WEI @tehtea (3 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#20-hu-w-enqi-vinci-hu-3-posts">20. HU W..ENQI @Vinci-Hu (3 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#21-choi-njae-wjchoi0712-3-posts">21. CHOI..NJAE @wjchoi0712 (3 posts) &#x200E;</a>
@@ -1971,7 +2006,7 @@ while (!isExit) {
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.3</a>, generated on Fri, 9 Apr 2021, 0:23:28 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.3</a>, generated on Sat, 10 Apr 2021, 0:28:35 GMT+8]</small>
       </div>
     </footer>
   </div>
